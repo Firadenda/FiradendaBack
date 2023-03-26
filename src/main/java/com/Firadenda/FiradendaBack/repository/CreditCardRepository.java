@@ -1,6 +1,6 @@
-package repository;
+package com.Firadenda.FiradendaBack.repository;
 
-import entity.CreditCard;
+import com.Firadenda.FiradendaBack.entity.CreditCard;
 import org.springframework.data.repository.CrudRepository;
 
 public interface CreditCardRepository extends CrudRepository<CreditCard,Long> {

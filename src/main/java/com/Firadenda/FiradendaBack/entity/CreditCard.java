@@ -1,4 +1,4 @@
-package entity;
+package com.Firadenda.FiradendaBack.entity;
 
 import jakarta.persistence.*;
 import lombok.*;
@@ -10,7 +10,7 @@ public class CreditCard {
     @Column(name = "id", nullable = false)
     private Long id;
 
-    String numero ;
+    String number;
 
     String date_dexpiration;
 

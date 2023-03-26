@@ -1,4 +1,4 @@
-package entity;
+package com.Firadenda.FiradendaBack.entity;
 
 import jakarta.persistence.*;
 import lombok.*;
@@ -17,10 +17,14 @@ public class Item {
 
     String name;
 
-    double prix;
+    double price;
 
     @ManyToOne
-    Categorie categorie;
+    Category category;
 
     String description;
+
+    String image;
+
+    Integer stock;
 }

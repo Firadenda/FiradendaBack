@@ -1,4 +1,4 @@
-package entity;
+package com.Firadenda.FiradendaBack.entity;
 
 import jakarta.persistence.*;
 import lombok.*;
