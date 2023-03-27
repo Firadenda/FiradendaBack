@@ -1,7 +1,9 @@
 package com.Firadenda.FiradendaBack.controller;
 
 import com.Firadenda.FiradendaBack.entity.Command;
+import com.Firadenda.FiradendaBack.entity.ItemCommand;
 import com.Firadenda.FiradendaBack.repository.CommandRepository;
+import com.Firadenda.FiradendaBack.repository.ItemCommandRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -18,6 +20,9 @@ public class CommandController {
     @Autowired
     CommandRepository commandRepository;
 
+    @Autowired
+    ItemCommandRepository itemCommandRepository;
+
     @GetMapping("")
     public List<Command> getAllCommands() {
         return commandRepository.findAll();
@@ -32,6 +37,7 @@ public class CommandController {
     @PostMapping("")
     public ResponseEntity<?> createCommand(@RequestBody Command command) {
         try {
+            itemCommandRepository.saveAll(command.getItems());
             commandRepository.save(command);
             return ResponseEntity.ok("Command created successfully");
         } catch (Exception e) {
