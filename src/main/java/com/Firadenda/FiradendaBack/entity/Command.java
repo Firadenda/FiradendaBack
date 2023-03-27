@@ -3,6 +3,7 @@ package com.Firadenda.FiradendaBack.entity;
 import jakarta.persistence.*;
 import lombok.*;
 
+import java.util.Dictionary;
 import java.util.List;
 
 @Entity
@@ -17,7 +18,7 @@ public class Command {
     private Long id;
 
     @OneToMany
-    private List<Item> items;
+    private List<ItemCommand> items;
 
     private double total;
 
