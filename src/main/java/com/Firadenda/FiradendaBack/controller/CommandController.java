@@ -29,7 +29,7 @@ public class CommandController {
         return command.map(ResponseEntity::ok).orElse(ResponseEntity.notFound().build());
     }
 
-    @PostMapping("/create")
+    @PostMapping("")
     public ResponseEntity<?> createCommand(@RequestBody Command command) {
         try {
             commandRepository.save(command);
