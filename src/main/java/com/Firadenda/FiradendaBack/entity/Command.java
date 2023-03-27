@@ -16,7 +16,7 @@ public class Command {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @OneToMany(mappedBy = "id")
+    @OneToMany
     private List<Item> items;
 
     @OneToOne
