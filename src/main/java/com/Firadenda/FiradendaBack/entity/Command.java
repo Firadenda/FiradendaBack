@@ -19,6 +19,8 @@ public class Command {
     @OneToMany
     private List<Item> items;
 
+    private double total;
+
     @OneToOne
     private CreditCard creditCard;
 
