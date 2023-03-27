@@ -68,7 +68,7 @@ public class CategoryController {
         }
     }
 
-    @PostMapping(path="/create")
+    @PostMapping(path="")
     public ResponseEntity<Object> createCategory(@RequestBody Category category) {
         try {
             categoryRepository.save(category);
