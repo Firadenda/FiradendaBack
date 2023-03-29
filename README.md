@@ -12,7 +12,7 @@
 
 1. Clone the Spring Boot project from GitHub using the following command in your terminal:  
 
-  git clone https://github.com/Firadenda/FiradendaBack.git
+    git clone https://github.com/Firadenda/FiradendaBack.git
 
 2. Open IntelliJ IDEA and select "Open" from the "File" menu.
 
