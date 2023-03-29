@@ -38,8 +38,32 @@
 
 7. Sync Maven by clicking the "Reload All Maven Projects" button in the Maven toolbar.
 
-8. Build the project by selecting "Build" from the "Build" menu.
+8. Configure your database connection:
 
-9. Run the project by selecting the main class that contains the `main` method and clicking the green "Run" arrow button in the gutter next to it.
+- Open the "application.properties" file in the "src/main/resources" directory.
+- Set the following properties:
+
+   ```
+   spring.datasource.url=jdbc:mysql://localhost:3306/<your-database-schema>
+   ```
+   
+   Replace `<your-database-schema>` with the name of the database schema that you want to use.
+   
+   You should set your database username and password as environment variables in your run configuration. To do this:
+   
+   - Click on the "Edit Configurations" button in the toolbar.
+   - Select the "Spring Boot" configuration.
+   - In the "Environment variables" section, add the following variables:
+   
+      ```
+      DB_USERNAME=<your-database-username>
+      DB_PASSWORD=<your-database-password>
+      ```
+      
+      Replace `<your-database-username>` and `<your-database-password>` with your actual database username and password.
+
+9. Build the project by selecting "Build" from the "Build" menu.
+
+10. Run the project by selecting the main class that contains the `main` method and clicking the green "Run" arrow button in the gutter next to it.
 
 Congratulations, you have successfully cloned and launched a Spring Boot project with Corretto 18 in IntelliJ IDEA!
