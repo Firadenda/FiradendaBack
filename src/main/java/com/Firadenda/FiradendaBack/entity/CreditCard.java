@@ -10,12 +10,12 @@ public class CreditCard {
     @Column(name = "id", nullable = false)
     private Long id;
 
-    String number;
+    Long number;
 
     String date_dexpiration;
 
     String owner;
 
-    String cvc;
+    Integer cvc;
 
 }
