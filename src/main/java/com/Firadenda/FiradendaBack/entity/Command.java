@@ -17,7 +17,7 @@ public class Command {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @OneToMany
+    @ManyToMany
     private List<ItemCommand> items;
 
     private double total;
