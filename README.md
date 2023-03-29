@@ -61,6 +61,8 @@
       ```
       
       Replace `<your-database-username>` and `<your-database-password>` with your actual database username and password.
+      
+      Note: If you don't see an "Environment variables" input, click on the "Modify options" link and activate the "Environment variables" option.
 
 9. Build the project by selecting "Build" from the "Build" menu.
 
